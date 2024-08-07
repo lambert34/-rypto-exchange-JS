@@ -19,4 +19,24 @@ const toggleNavbar = function () {
     document.body.classList.toggle("active");
 }
 
-addEventOnElem(navToggler, 'click', toggleNavbar); //2636
+addEventOnElem(navToggler, 'click', toggleNavbar); 
+
+const closeNavbar = function () {
+    navbar.classList.remuve("active");
+    navToggler.classList.remuve("active");
+    document.body.classList.remuve("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
+const header = document.querySelector("[data-header]");
+
+const activeHeader = function () {
+    if (window.scrollY > 300) {
+        header.classList.add("active");
+    } else {
+        header.classList.remove("active");
+    }
+}
+
+addEventOnElem(window, "scroll", activeHeader);

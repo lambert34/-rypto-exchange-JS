@@ -129,6 +129,10 @@ body {
   line-height: 1.4;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -251,8 +255,6 @@ body {
   visibility: visible;
   transition-duration: 0.05s;
 }
-
-
 
 .navbar-list {
 }
