@@ -40,3 +40,11 @@ const activeHeader = function () {
 }
 
 addEventOnElem(window, "scroll", activeHeader);
+
+const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
+
+const toggleActive = function () {
+    this.classList.toggle("active");
+}
+
+addEventOnElem(addToFavBtns, "click", toggleActive);
