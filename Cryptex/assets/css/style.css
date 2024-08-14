@@ -348,7 +348,7 @@ body.active {
   padding-block: var(--section-padding);
 }
 
-/* [data-section] > * {
+[data-section] > * {
   transform: translateY(50px);
   opacity: 0;
   transition: var(--transition-3);
@@ -357,7 +357,7 @@ body.active {
 [data-section].active > * {
   opacity: 1;
   transform: translateY(0);
-} */
+}
 
 .hero {
   padding-block: 150px 140px;
